@@ -25,7 +25,8 @@ int main(int argc, char *argv[])
     for (int i = 0; i < N; i++)
         printf("%d\n", key(a[i]));
 
-    printf ("Elapsed time: %.3f\n", time_taken);
+    printf ("Elapsed time: %.3fms\n", time_taken);
+    printf("In seconds: %.0fs\n", 1000 * time_taken);
 
     free(a);
 
